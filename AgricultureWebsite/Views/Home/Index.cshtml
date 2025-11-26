@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home - AgriLearn";
+}
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Understanding Modern Agriculture</h2>
+            <p>Discover the diverse farming practices that shape our world and sustain our planet.</p>
+            <div class="hero-buttons">
+                <a href="#agriculture-types" class="btn">Explore Farming Methods</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="agriculture-types" id="agriculture-types">
+    <div class="container">
+        <div class="section-title">
+            <h2>Agricultural Practices</h2>
+            <p>Explore three distinct farming methods</p>
+        </div>
+        <div class="agri-card">
+            <div class="card-content">
+                <div class="card-icon">
+                    <i class="fas fa-horse"></i>
+                </div>
+                <h3>Livestock Ranching</h3>
+                <p>Raising large herds of animals on vast areas of land for meat, hides, and wool.</p>
+                <a asp-controller="Home" asp-action="Livestock" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="agri-card">
+            <div class="card-content">
+                <div class="card-icon">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <h3>Commercial Agriculture</h3>
+                <p>Large-scale farming designed to maximize productivity and profit.</p>
+                <a asp-controller="Home" asp-action="CommercialAgriculture" class="btn">Learn More</a>
+            </div>
+        </div>
+
+            <div class="agri-card">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Organic Farming</h3>
+                    <p>Emphasizes natural processes, biodiversity, and ecological balance. Avoids synthetic pesticides, fertilizers, and GMOs.</p>
+                    <a asp-controller="Home" asp-action="OrganicFarming" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
